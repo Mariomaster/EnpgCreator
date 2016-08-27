@@ -87,6 +87,8 @@ namespace EnpgCreator
 
                 Console.Write("Encoding " + path + "...");
 
+                bmp.RotateFlip(RotateFlipType.Rotate90FlipX);
+
                 int cCount = 256;
                 if (forCredits)
                     cCount = 251;
